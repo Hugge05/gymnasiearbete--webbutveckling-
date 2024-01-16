@@ -83,7 +83,7 @@ color: #1B278B;
 .link1:hover
 {
     color:#1B278B;
-    
+
 }
 .link2:hover
 {
@@ -121,6 +121,7 @@ color: #1B278B;
 }
 .lnk3
 {
+    
     color:black;
 }
 .ham1
@@ -131,11 +132,11 @@ color: #1B278B;
     position:absolute;
     top:15px;
     right:10px;
-    display:none;
+   
 }
 .ham2
 {
-    display:none;
+   
     width:25px;
     height:3.5px;
     background-color: black;
@@ -145,7 +146,7 @@ color: #1B278B;
 }
 .ham3
 {
-    display:none;
+    
     width:25px;
     height:3.5px;
     background-color: black;
@@ -196,6 +197,7 @@ color: #1B278B;
 
 .link
 {
+
     position: absolute;
     top:10px;
     right:40px;
@@ -295,11 +297,7 @@ main
 
 @media screen and (max-width:780px)
 {
-    .ham1, .ham2, .ham3
-    {
-        display: block;
-        
-    }
+   
     .link1
     {
         display: none;
@@ -307,11 +305,13 @@ main
     .link2
     {
         display: none;
+        display:none;
+
     }
 
     .block
     {
-        /*hshssw*/
+    
         width:100px;
 
     }
