@@ -1,0 +1,354 @@
+:root
+{
+    --body-background-color: #787878;
+    --text-font: 'Braah One';
+    
+}
+
+
+
+body
+{
+   
+     overflow:hidden; 
+    background-color: var(--body-background-color);
+    
+    height:1000px;
+    overflow: scroll;
+    overflow-x: hidden;
+    margin:0;
+   
+}
+header
+{
+    
+    background-color: grey;
+    
+    display: flex;
+    height:50px;
+    width:100%; 
+    margin:0;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.logo
+{
+    margin:10px;
+    text-align: left;
+    font-family: var(--text-font);
+    color:black;
+    text-decoration: none;
+    display: inline-block;
+    
+}
+.logo:hover
+{
+color: #1B278B;
+}
+
+.logo:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #1B278B;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.logo:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+.link1
+{
+    font-family: var(--text-font);
+    color: black;
+    text-decoration: none;
+    margin:60px;
+}
+.link2
+{
+ text-decoration: none;
+ color: black;
+ font-family: var(--text-font);
+
+
+}
+.link1:hover
+{
+    color:#1B278B;
+    
+}
+.link2:hover
+{
+    color: #1B278B;
+}
+
+
+
+.block
+{
+    position:absolute;
+    top:50px;
+    right:0;
+    height:100vh;
+    width:400px;
+    background-color: #292967;
+    z-index: -99;
+    transform: translateX(100%);
+}
+
+.block.active
+{
+    transform: translateX(0);
+    transition:0.5s;
+    z-index:2;
+}
+.lnk1
+{
+
+    color:black;
+}
+.lnk2
+{
+    color:black;
+}
+.lnk3
+{
+    color:black;
+}
+.ham1
+{
+    width:25px;
+    height: 3.5px;
+    background-color:black;
+    position:absolute;
+    top:15px;
+    right:10px;
+    display:none;
+}
+.ham2
+{
+    display:none;
+    width:25px;
+    height:3.5px;
+    background-color: black;
+    position:absolute;
+    top: 20px;
+    right: 10px;
+}
+.ham3
+{
+    display:none;
+    width:25px;
+    height:3.5px;
+    background-color: black;
+    position:absolute;
+    top: 25px;
+    right: 10px;
+}
+.meny
+{
+    position:relative;
+    font-size:20px;
+    padding:10px;
+    cursor:pointer;
+    transition: 0.2s;
+    height:100%;
+    width:50px;
+    
+}
+
+
+
+.meny span
+{
+    transition:0.5s;
+}
+.meny.active .ham1
+{
+    transform:rotate(45deg);
+    top:20px;
+  
+}
+.meny.active .ham2
+{
+    opacity: 0;
+    
+}
+
+
+.meny.active .ham3
+{
+    
+    transform:rotate(-45deg);
+    top:20px;
+    
+}
+
+
+
+.link
+{
+    position: absolute;
+    top:10px;
+    right:40px;
+    font-size:20px;
+}
+
+.startsidaLogo
+{
+    text-align: center;
+    position:absolute;
+    top: 250px;
+    font-size:60px;
+
+    animation-name: textanimation;
+    animation-duration:0.7s;
+    font-family: var(--text-font);
+    -webkit-animation-fill-mode: forwards;
+    user-select: none;
+
+}
+
+
+.tutorialsKnapp
+{
+    border-style:dotted;
+    position: absolute;
+    left: 550px;
+    top:320px;
+    border-radius: 10px;
+    width:85px;
+    height:35px;
+    text-align:center;
+    background-color:#1B278B;
+    font-size:20px;
+
+}
+
+/* rutor för alla tutorials */
+.col-md-3
+{
+    
+    margin: 30px;
+    height:150px;
+    width:200px;
+    border: solid black;
+    border-radius:20px;
+
+}
+.col-md-3:hover
+{
+    
+    width:175px;
+    height:225px;
+    transition:s;
+}
+.col-md-3:hover
+{
+    border: solid green;
+}
+main
+{
+    display: flex;
+    
+    max-width:700px;
+    margin:auto;
+    justify-content: center;
+}
+.tut1titel
+{
+    z-index: -1;
+}
+.tut1img
+{
+   position:absolute;
+   top:300px;
+   right:20px;
+
+   
+   z-index: -2;
+   display: flex;
+   width:100vh;
+   border-radius:9.9%;
+   
+}
+.button:hover
+{
+    height:45px;
+    width:95px;
+    
+}
+.intro-text
+{
+    
+    right:50px; 
+
+}
+
+@media screen and (max-width:780px)
+{
+    .ham1, .ham2, .ham3
+    {
+        display: block;
+        
+    }
+    .link1
+    {
+        display: none;
+    }
+    .link2
+    {
+        display: none;
+    }
+
+    .block
+    {
+        
+        width:100px;
+
+    }
+
+    .meny.active
+    {
+        width:100px;
+        transition:0.555555599s;
+    }
+    .startsidaLogo
+    {
+        text-align: center;
+    }
+    .meny:hover
+    {
+        background-color:#1B278B;
+    }
+    .headerLinkS
+    {
+        display:none;
+    }
+
+}
+@keyframes textanimation
+{
+    0%
+    {
+        
+        left:0%;
+
+    }
+  
+    100%
+    {
+        left:35%;
+        
+    }
+}
+    
+
