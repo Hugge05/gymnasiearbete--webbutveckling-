@@ -71,14 +71,15 @@ color: #1B278B;
     color: black;
     text-decoration: none;
     margin:60px;
+    
 }
 .link2
 {
  text-decoration: none;
  color: black;
  font-family: var(--text-font);
-
-
+/* display:none; */
+margin-right: 80px;
 }
 .link1:hover
 {
@@ -97,11 +98,13 @@ color: #1B278B;
     position:absolute;
     top:50px;
     right:0;
-    height:100vh;
+    height:80vh;
     width:400px;
     background-color: #292967;
     z-index: -99;
     transform: translateX(100%);
+    border-radius:20px;
+    border: solid white 2px;
 }
 
 .block.active
@@ -156,7 +159,7 @@ color: #1B278B;
 }
 .meny
 {
-    position:relative;
+    justify-content: end;
     font-size:20px;
     padding:10px;
     cursor:pointer;
@@ -295,7 +298,7 @@ main
 
 }
 
-@media screen and (max-width:780px)
+@media screen and (max-width:880px)
 {
    
     .link1
@@ -320,6 +323,8 @@ main
     {
         width:100px;
         transition:0.555555599s;
+        border-top-left-radius:20px;
+        border-bottom-left-radius: 20px;
     }
     .startsidaLogo
     {
@@ -333,7 +338,12 @@ main
     {
         display:none;
     }
-
+    /* test för att flytta på krysset. */
+    /*.ham1.active,  .ham3.active::active
+    {
+        position:absolute;
+        right:50px;
+    }*/
 }
 @keyframes textanimation
 {
