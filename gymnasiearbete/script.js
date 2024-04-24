@@ -21,7 +21,7 @@ document.querySelector(".starsidaLogo").addEventListener("scroll", function()
 
 
 
-//document.addEventListener("DOMContentLoaded", ()=> 
+/*document.addEventListener("DOMContentLoaded", ()=> 
 {
    const loginForm = document.querySelector("#login");
    //const createAccountForm = document.querySelector("#skapaKonto");
@@ -45,7 +45,7 @@ document.querySelector(".starsidaLogo").addEventListener("scroll", function()
 
     setFormMessage(loginForm, "error", "fel användarnamn eller Lösemnords kombo!");
    })
-//});
+});
 
 /*form = document.getElementById("form");
 var inputEmail = document.getElementById("email");
@@ -144,4 +144,6 @@ function valideralösen()
         document.querySelector(".korrektmeddelande").innerHTML = "";
     }
 }    
-}
+} 
+
+*/}
