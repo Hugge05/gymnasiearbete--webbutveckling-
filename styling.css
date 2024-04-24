@@ -1,0 +1,32 @@
+
+header
+{
+    display:flex;
+    align-items:center;
+    justify-content: space-between;
+
+}
+body
+{
+    margin:0;
+}
+
+.meny
+{
+    margin-top:20px;
+    display:flex;
+    align-items:center;
+
+}
+.ham1
+{
+ 
+}
+.ham2
+{
+
+}
+.ham3
+{
+
+}

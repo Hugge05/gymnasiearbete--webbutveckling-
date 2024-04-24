@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ditt Konto</title>
+</head>
+<body>
+    <div class="container">
+        <h1 class="inactive">Ditt Konto</h1>
+
+        <h2 class="inactive" id="usrname"></h2>
+        <h2 class="inactive" id="emailAddress"></h2>
+        <h2 class="inactive" id="poäng"></h2>
+        <h2 class="inactive" id="rank"></h2>
+        <div class="inactive" id="bar"></div>
+        <button class="inactive" id="logOut">Logga ut</button>
+
+        <h1 class="inteInloggad"></h1>
+
+    </div>
+
+    <script>
+        var username = document.getElementById("usrname");
+        var email = document.getElementById("emailAddress");
+        var poäng = document.getElementById("poäng");
+        var rank = document.getElementById("rank");
+        var bar = document.getElementById("bar");
+        var logOut = document.getElementById("logOut");
+
+
+        var user = JSON.parse(localStorage.getItem("user"));
+    
+    </script>
+</body>
+</html>

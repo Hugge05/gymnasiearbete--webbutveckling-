@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skapa konto</title>
+    <link rel="stylesheet" href="style2.css">
+    
+</head>
+<body>
+    
+    <div class="container">
+        <h1>Skapa konto</h1>
+
+    <form id="form" method="POST">
+        
+         <input type="text" name="usrname" id="usrname" placeholder="Användarnamn">
+         <br>
+        <br>
+        
+        
+        
+    
+        
+        <input type="password" name="password" id="password" onkeyup="valideralösen()"     placeholder="Lösenord">
+        <br>
+        <br>
+        <input class="knappen" type="submit">
+       
+    </div>
+    <div class="meddelande">
+        <h3> Lösenord måste innehålla följande: </h3>  
+        <p id="bokstav" class="invalid"> Liten bokstav</p>
+        <p id="storbkstv" class="invalid"> Stor bokstav</p>
+        <p id="nmr" class="invalid"> En siffra </p>
+        <p id="längd" class="invalid">minst 8 tecken</p>
+        <p id="maxlängd" class="valid"> Max 20 tecken</p>
+    </div>
+    
+    
+    <script: src="script2.js" type="module"></script>
+    <script src="script2.js"></script>
+    <style>
+      #meddelande {
+    display:none;
+    background: #f1f1f1;
+    color: #000;
+    position: relative;
+    padding: 20px;
+    margin-top: 10px;
+  }
+  
+  #meddelande p {
+    padding: 10px 35px;
+    font-size: 18px;
+  }
+  
+  .valid {
+    color: green;
+  }
+  
+  .valid:before {
+    position: relative;
+    left: -35px;
+    content: "&#10004;";
+  }
+  
+  .invalid {
+    color: red;
+  }
+  
+  .invalid:before {
+    position: relative;
+    left: -35px;
+    content: "&#10006;";
+  }
+    
+</style>
+
+    </form>
+    
+</body>
+</html>

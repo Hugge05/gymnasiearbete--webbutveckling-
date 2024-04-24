@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styling.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <title>Tutorials</title>
 </head>
@@ -87,79 +87,19 @@
         <br>
 
         <p class="textbox"> /* Detta är en fler raders kommentar, denna kommentar kan vara väldigt lång. Denna används framförallt om man vill testa att se hur programmer kommer fungera utan just den koden! */</p>
-        <p> Det är viktigt att Man har /* I  början och */ i slutet! Annars så kommer fungerar det inte som det ska! Om man missar den sista */ så blir kommentaren hela sidan efter början (/*) på kommentaren!</p>
+        <p style="font:bold;"> Det är viktigt att Man har /* I  början och */ i slutet! Annars så kommer fungerar det inte som det ska! Om man missar den sista */ så blir kommentaren hela sidan efter början (/*) på kommentaren!</p>
         <img src="0_VYGU5sx8ET8hbar1-min.jpg" alt="programmering/kod " class="tut1img">
 
-        <form action="">
-        <h2 style="font-weight: bolder;">Här kommer en uppgift! </h2>
-        <h3>Skriv en enkelrads kommentar, som ser ut här: </h3>
-        <h4>Denna kod beskriver hur man printar ut en text rad</h4>
-        <input type="text" name="svar" id="svar">
-        <br>
-        <p class="invalid" id="korrektmeddelande"></p>
-        <p class="invalid" id="felmeddelande"></p>
-        <button type="submit">Skicka</button>
-        </form>
-
-<script src="https://www.gstatic.com/firebasejs/7.14.6/firebase-app.js">
-
-            // Import the functions you need from the SDKs you need
-import { initializeApp } from "firebase/app";
-import { getAnalytics } from "firebase/analytics";
-// TODO: Add SDKs for Firebase products that you want to use
-// https://firebase.google.com/docs/web/setup#available-libraries
-
-// Your web app's Firebase configuration
-// For Firebase JS SDK v7.20.0 and later, measurementId is optional
-const firebaseConfig = {
-  apiKey: "AIzaSyCQEExxqTg-a14xmn_kRFv493j1KcxkQeY",
-  authDomain: "kodlabbet-ff322.firebaseapp.com",
-  projectId: "kodlabbet-ff322",
-  storageBucket: "kodlabbet-ff322.appspot.com",
-  messagingSenderId: "454506529486",
-  appId: "1:454506529486:web:6ac3979e582d4fe1a7c69f",
-  measurementId: "G-KQZ9HXV5HY"
-};
-
-var database = firebase.database();
-
-
-// Initialize Firebase
-const app = initializeApp(firebaseConfig);
-const analytics = getAnalytics(app);
-</script>
-<script>
-
-var svar = document.getElementById("svar");
-    var form = document.querySelector("form");
-    var korrektmeddelande = document.getElementById("korrektmeddelande");
-    var felmeddelande = document.getElementById("felmeddelande");
-
-    database.ref('data').set({
-    question: 'Skriv en enkelrads kommentar, som ser ut här: ',
-    answer: '//Denna kod beskriver hur man printar ut en text rad'
-})
-
-
-
-    if (svar.value == answer)
-    {
-        alert("Rätt svar!");
-        korrektmeddelande.innerHTML = "Rätt svar!";
-    }
-    else
-    {
-        event.preventDefault();
-        alert("Fel svar!");
-        felmeddelande.innerHTML = "Fel svar!";
-    }
-
-        </script>
+        <h3> Nu kommer en uppgift!</h3>
+        <form action="question.php" method="POST">
+            Skriv en Enkelrads kommentar som säger, "Det här är en enkelrads kommentar":
+            <input type="text" name="question1">
+            <input type="submit">
+            </form>
+            
 
     </div>
     </main>
     <script src="script.js"></script>
     </body>
-
-    
 </html>

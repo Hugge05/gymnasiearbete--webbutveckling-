@@ -22,19 +22,38 @@
                 <span class="ham2"></span>
                 <span class="ham3"></span>
             </div>
-            
+           <!-- <div class="headerLinkS"></div>
                 <div class="headerLinkS">
-                    <a href="tutorials.html" class="link1" >Tutorials</a>
+                    <a href="tutorials.html" class="link1">Tutorials</a>
                     <a href="information.html" class="link2">Information</a>
                 </div>
-               
+                -->
+         
             </div> 
+            <input id="dark-mode" class="toggle" type="checkbox">
+            <div class="curtain"></div>
             <div class="block">
                 <nav>
-                     <ul>
-                            <li><a href="tutorials.html">Tutorials</a></li>
-                            <li><a href="#">Link 2</a></li>
-                            <li><a href="#">Link 3</a></li>
+                     <ul style="list-style-type: none;">
+                             <li><img src="media/open-book.png" class="icons"><button class="menyKnappar2"><a href="tutorials.html">Tutorials</a></button></li> 
+                            <li><img src="media/user (1).png" class="icons"><button class="menyKnappar2"><a href="skapakonto.html">Skapa Konto</a></button></li>
+                            <li> <img src="media/user.png" class="icons"><button class="menyKnappar2"><a href="Loggain.html">Logga in</a> </button></li>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <li> <img src="media/information-button.png" class="icons"> <a href="info.html"> Information</a></li>
                     </ul>
                 </nav>
             </div>
@@ -43,10 +62,31 @@
         </header>
     <main>
         <div>
-            <div class="startsidaLogo">
-                <p class="text-center">Kodlabbet</p>
+            <div  style="font-style: italic; position: absolute; top: 280px;" class="startsidaLogo text-center">
+                <p>Kodlabbet</p>
             </div>
+            <!-- <div class="startsidaLogo">
+                <p class="text-center">Kodlabbet</p>
+
+            </div> -->
         </div>
+
+        <h5 style="font-style: italic; position: absolute; top: 360px; " class="text-center">
+            "Denna sida är perfekt för en nybörjare" - Hugo Axelsson
+        </h5>
+        <div class="text-center">
+        <button type="button" class="TheButton" >Tutorials</button>
+        </div>
+
+
+
+        <!--
+                <div class="AI_gen">
+                <img src="media/OIG2.jpg" alt="En man som programmerar" >
+                <h6>Denna bild är AI-genererad</h6>
+                </div>
+            
+        -->
         
             <!-- Knapp för att komma till menyerna.-->
             <!-- <div class="text-center">
@@ -56,12 +96,20 @@
                 </div>
             </div>  -->
             
-        
+        <img src="reshoy-icon-QLCUYJBKM3.svg" alt="">
 
         <!--
         <img src="367274-deepminds-ai-is-learning-about-the-art-of-coding.jpg" alt="programmeringsbild" class="startsidabild">-->
     </main>
     <script src="script.js"></script>
+    <script>
+        document.querySelector(".meny").addEventListener("click", function()
+        {
+            document.querySelector(".block").classList.toggle("active");
+            document.querySelector(".meny").classList.toggle("active");
+            document.querySelectorAll('.meny span')[0].classList.toggle("active");
+        });
+    </script>
    
 </body>
 </html>
